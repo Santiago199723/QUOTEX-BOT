@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap'); /* Adicionando a fonte Dancing Script */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-signup.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgba(14, 53, 66, 0.9); /* Azul claro com opacidade */
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #000000a0;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7ecee8; /* Azul claro */
+  font-family: 'Dancing Script', cursive; /* Usando a fonte Dancing Script para o título */
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #add8e6; /* Azul claro */
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  color: #add8e6; /* Azul claro */
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #87cefa; /* Azul mais claro ao focar */
+}
+
+.label-float label {
+  color: #add8e6; /* Azul claro */
+  pointer-event: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #87cefa; /* Azul mais claro ao focar ou com entrada válida */
+}
+
+button {
+  background-color: transparent;
+  border-color: #add8e6; /* Azul claro */
+  color: #87ceeb; /* Azul claro */
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover {
+  background-color: #87cefa; /* Azul mais claro ao passar o mouse */
+  color: #060707;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #87cefa; /* Azul mais claro para o ícone do olho */
+}
+
+#msgError {
+  text-align: center;
+  color: #116373;
+  background-color: #62eaec;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess {
+  text-align: center;
+  color: #0f778b;
+  background-color: #62eaec;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

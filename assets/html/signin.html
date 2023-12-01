@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/signin.css" />
+    <style>
+      /* Reset de margens padrão para o corpo e parágrafo */
+      body, p, div, h1 {
+        margin: 0;
+      }
+
+      /* Estilo para o botão Suporte */
+      .support-button {
+        background: transparent;
+        color: #020d14; /* Cor azul clara */
+        border: 2px solid #9fd5f9; /* Contorno azul claro */
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .support-button:hover {
+        background: #27b8c2; /* Cor de fundo ao passar o mouse */
+        color: rgb(1, 1, 1)707; /* Cor do texto ao passar o mouse */
+      }
+
+      /* Adicione margem superior para separar do link de cadastro */
+      .support-button-container {
+        margin-top: 10px;
+      }
+    </style>
+    <title>QUOTEX INTELLIGENCE BOT</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Entrar</h1>
+
+        <div id="msgError"></div>
+
+        <div class="label-float">
+          <input type="text" id="usuario" placeholder="" required />
+          <label id="userLabel" for="usuario">Usuario</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" placeholder="" required />
+          <label id="senhaLabel" for="senha">Senha</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="entrar()">Entrar</button>
+        </div>
+
+        <!-- Links de cadastro -->
+        <div class="justify-center">
+          <p>
+            Crie seu login |
+            <a href="./signup.html">
+              Cadastre-se
+            </a>
+          </p>
+        </div>
+
+        <!-- Botão de suporte -->
+        <div class="justify-center support-button-container">
+          <button class="support-button" onclick="window.location.href='https://t.me/+By1fd0M7ZCAwNmFh'">
+            Suporte
+          </button>
+        </div>
+    <script src="../js/signin.js"></script>
+  </body>
+</html>
